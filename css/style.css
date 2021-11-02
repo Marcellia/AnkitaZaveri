@@ -93,6 +93,27 @@ img {
   font-size: 1rem;
 }
 
+.blinker {
+  animation: opacity 1s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.inlineTypeEffect {
+  display: inline-block;
+}
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
