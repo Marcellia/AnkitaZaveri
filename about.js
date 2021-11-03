@@ -14,7 +14,9 @@ increment();
 document.getElementById("projects").addEventListener("click", increment);
 
 var i = 0;
-var txt = "Hello! My name is...";
+var j = 0;
+var txt = "Hello! My name is..";
+var myName = "Ankita Zaveri";
 var speed = 200;
 
 function typeWriter() {
@@ -22,6 +24,20 @@ function typeWriter() {
     document.getElementById("typeEffect").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
+    console.log(i);
   }
 }
-typeWriter();
+
+let nameWriter = () => {
+  document.getElementById("blinkingCursor").classList.add("hide");
+  if (j < myName.length) {
+    document.getElementById("nameEffect").innerHTML += myName.charAt(j);
+    j++;
+    setTimeout(nameWriter, speed);
+    console.log(j);
+  }
+  console.log("exit");
+};
+
+setTimeout(typeWriter, 1000);
+setTimeout(nameWriter, 5000);

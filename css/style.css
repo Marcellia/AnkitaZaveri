@@ -120,6 +120,7 @@ img {
   color: var(--aqua);
   display: block;
   font-weight: 300;
+  display: inline-block;
 }
 
 #intro h2 {
@@ -260,6 +261,10 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   font-size: 3rem;
+}
+
+.hide {
+  display: none;
 }
 @media (min-width: 800px) {
   article {
