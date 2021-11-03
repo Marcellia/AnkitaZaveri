@@ -16,7 +16,7 @@ document.getElementById("projects").addEventListener("click", increment);
 var i = 0;
 var j = 0;
 var txt = "Hello! My name is..";
-var myName = "Ankita Zaveri";
+var myName = "Ankita Zaveri.";
 var speed = 200;
 
 function typeWriter() {
