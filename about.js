@@ -15,7 +15,7 @@ document.getElementById("projects").addEventListener("click", increment);
 
 var i = 0;
 var j = 0;
-var txt = "Hello! My name is..";
+var txt = "Hello! My name is";
 var myName = "Ankita Zaveri.";
 var speed = 200;
 
@@ -29,6 +29,7 @@ function typeWriter() {
 }
 
 let nameWriter = () => {
+  document.getElementById("secondCursor").innerHTML = "|";
   document.getElementById("blinkingCursor").classList.add("hide");
   if (j < myName.length) {
     document.getElementById("nameEffect").innerHTML += myName.charAt(j);
@@ -40,4 +41,5 @@ let nameWriter = () => {
 };
 
 setTimeout(typeWriter, 1000);
+
 setTimeout(nameWriter, 5000);
