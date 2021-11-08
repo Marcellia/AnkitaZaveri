@@ -308,3 +308,19 @@ footer ul {
     margin-right: auto;
   }
 }
+
+.spin {
+  animation: rotation 2s ease-in-out infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
